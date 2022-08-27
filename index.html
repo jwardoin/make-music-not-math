@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Your description goes here" />
+    <meta name="keywords" content="one, two, three" />
+
+    <title>Make Music, Not Math</title>
+
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header></header>
+    <h2>Musician Tax Calculator</h2>
+
+    <section>
+      <blockquote>
+        "Let me tell you how it will be <br />
+        There's one for you, nineteen for me <br />
+        'Cause I'm the taxman" - <em>Taxman</em>, The Beatles
+      </blockquote>
+      <p>
+        Whether you like it or not, every time you make money on a gig, teaching
+        a lesson, or selling an album, that is considered <em>income</em> by the
+        IRS and thus is subject to income tax laws. In most cases, this income
+        will be classified as self-employed or contract income; this means that
+        on top of paying income tax, you are also subject to paying the full
+        amount for FICA tax (Social Security and Medicare).
+      </p>
+
+      <p>
+        Using this page, you can quickly get an idea of how much tax you will
+        owe
+      </p>
+    </section>
+
+    <section>
+      <h4>Guidelines</h4>
+      <div class="container">
+        <ul>
+          <h5>Income</h5>
+          <li>Payments for a performance</li>
+          <li>Sale of albums & merchandise</li>
+          <li>Streaming revenue</li>
+          <li>Other royalties</li>
+        </ul>
+
+        <ul>
+          <h5>Deductions</h5>
+          <li>Purchase of Tools of trade(instruments, )</li>
+          <li>Research(Attending other musical events, )</li>
+          <li>Studio/Rehearsal Space</li>
+          <li>Travel Expenses while working</li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+
+    <h1>Input your information here</h1>
+    <form>
+      <label for="music-income">Add Income $</label>
+      <input
+        id="music-income"
+        type="number"
+        placeholder="0"
+        name="music-income"
+      />
+
+      <label for="other-income">Add Other Income $</label>
+      <input
+        id="other-income"
+        type="number"
+        placeholder="0"
+        name="other-income"
+      />
+
+      <label for="deductions">Add Deductions $</label>
+      <input id="deductions" type="number" placeholder="0" name="deductions" />
+    </form>
+    <button id="submit">Calculate</button>
+    <section>
+      <h2>Results</h2>
+      <p id="results"></p>
+    </section>
+    <small
+      >**Nothing on this page should be construed as professional advice. Please
+      speak with an accountant when preparing your taxes
+    </small>
+    <footer>AJW Solutions 2022 &copy; All Rights Reserved</footer>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
